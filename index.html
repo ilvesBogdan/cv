@@ -92,10 +92,7 @@
       <div class="one-half column">
         <picture class="foto">
           <source srcset="/images/foto.webp" type="image/webp">
-          <img src="/images/foto.jpg" alt="фото" onerror="((e)=>{
-            e.onerror = null;
-            e.src = '/cv/images/foto.jpg';
-          })(this)">
+          <img src="/images/foto.jpg" alt="фото" onerror="this.onerror=null;this.src='/cv/images/foto.jpg';">
         </picture>
       </div>
     </div>
